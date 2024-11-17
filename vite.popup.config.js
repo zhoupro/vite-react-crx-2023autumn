@@ -13,7 +13,7 @@ export default defineConfig({
         // 指定dev sever的端口号，默认为5173
         port: 3000,
         // 自动打开浏览器运行以下页面
-        open: '/',
+        // open: '/',
         // 设置反向代理
         proxy: {
             // 以下示例表示：请求URL中含有"/api"，则反向代理到http://localhost

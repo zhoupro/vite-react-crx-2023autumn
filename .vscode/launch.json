@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Extension",
+            "request": "launch",
+            "type": "chrome",
+            "sourceMaps": true,
+            // "perScriptSourcemaps": "yes",
+            "runtimeArgs": [
+                "--load-extension=${workspaceFolder}/build"
+            ],
+        },
+        {
+            "name": "Vite",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*"
+            }
+        }
+    ]
+}
